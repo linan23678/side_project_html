@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/common.css">
+</head>
+<body>
+    <h1 class="xx">用戶註冊</h1>
+
+    <form method="post" action="/register">
+    <div>
+        用戶名:
+            <input type="text" name="user" />
+    </div>
+    <div>
+        密碼:
+            <input type="password" name="pwd" />
+    </div>
+    <div>
+        性別:
+            <input type="radio" name="gender" value="male" />男 
+            <input type="radio" name="gender" value="female"/>女
+    </div>
+    <div>
+        興趣:
+            <input type="checkbox" name="hobby" value="10" /> 棒球
+            <input type="checkbox" name='hobby' value="20"/> 羽毛球
+            <input type="checkbox" name='hobby' value="30"/> 籃球
+    </div>
+    <div>
+        居住地:
+            <select name="city">
+                <option value="N">北部</option>
+                <option value="M">中部</option>
+                <option value="S">南部</option>
+            </select>
+    </div>
+    <div>
+        擅長領域:
+            <select name="skill" multiple>
+                <option value="Music">音樂</option>
+                <option value="sport">運動</option>
+                <option value="draw">畫畫</option>
+            </select>
+    </div>
+    <div>
+        備註:
+            <textarea name="more_msg"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="提交"/>
+    </div>
+
+    </form>
+</body>
+</html>

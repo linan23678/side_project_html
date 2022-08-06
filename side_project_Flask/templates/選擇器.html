@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .c1{
+            color: red;
+        }
+        #c2{
+            color: aquamarine;
+        }
+        #c3{
+            color: gold;
+        }
+        .yy> li{
+            color: salmon;
+        }
+        input[type='text']{
+	            border: 1px solid red;
+        }
+        .v1[xx='333']{
+            color: pink;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1">台北</div>
+    <div id="c2">台南</div>
+    <div id="c3">新北</div>
+    <ul>
+        <li>台中</li>
+        <li>基隆</li>
+        <li>高雄</li>        
+    </ul>
+    <input type="text"/>
+    <div class="v1" xx="'123">台北</div>
+    <div class="v1" xx="333">台南</div>
+    <div class="v1" xx="456">新北</div>
+    
+    <ul class="yy">
+        <li>台中</li>
+        <li>基隆</li>
+        <li>高雄</li>
+        <div>
+            <li>子_台中</li>
+            <li>子_基隆</li>
+            <li>子_高雄</li>        
+        </div>        
+    </ul>
+</body>
+</html>
